@@ -196,6 +196,10 @@ button {
  *********************************************/
 
 a {
+  color: #3c4a5b;
+}
+
+button a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
