@@ -64,7 +64,7 @@
 						</section data-transition="linear">
 						<section>
 							<h3>Rails Developers</h3>
-							<img src="/Assets/Ruby_Team.jpg">
+							<img style="width: 50%; height: auto;"src="/Assets/Ruby_Team.jpg">
 							<ul>
 								<li>Steve Buckley</li>
 								<li>Kevin Staiger</li>
@@ -77,26 +77,223 @@
 					<h2>EVER SEEN THIS?</h2>
 					<script type="text/template">
         ## EVER SEEN THIS?
-        ```rails
-					class Rectangle
-					def initialize(width, height)
-					@width = width
-					@height = height
-					end
+        ```html
+					<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../Refactor-Style/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../Refactor-Style/css/module.css">
+  <link rel="stylesheet" type="text/css" href="../Refactor-Style/css/base.css">
+  <link rel="stylesheet" type="text/css" href="../Refactor-Style/css/layout.css">
+  <link rel="stylesheet" type="text/css" href="../Refactor-Style/css/typography.css">
+  <link rel="stylesheet" type="text/css" href="../Refactor-Style/css/state.css">
+</head>
+<body>
+  <header class="flex-header">
+      <a href="../Refactor-Style/index.html"><img class="refactors_logo" src="../Refactor-Style/Assets/svg/REFACTORS_LOGO.svg"></a>
+      <nav class="nav">
+        <form class="searchbox" action="">
+          <input class="search" type="text" placeholder="Search">
+          <svg  class="submit" type="submit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"  enable-background="new 0 0 19.28 19.28" xml:space="preserve">
+          <g>
+            <circle opacity="0.75" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" cx="7" cy="7" r="6.3"/>
 
-					def area
-					@width * @height
-					end
+              <line opacity="0.75" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="13.3" y1="13.3" x2="18.8" y2="18.8"/>
+          </g>
+          </svg>
+        </form>
+        <a href="../Refactor-Style/help.html" class="help"></a>
+        <div class="account">
+          <a class="login" href="#modal-one">Login |</a>
+          <a class="signup" href="#modal-one">| Sign Up</a>
+        </div>
+      </nav>
+  </header>
+  <section class="hero flex column center">
+    <h1>Refactors</h1>
+    <h4 id="herotext">Because every line of code is an opportunity for optimization.</h4>
+    <p>Refactors is a community of like-minded coders seeking to improve their code together.</br>Post code to be refactored or browse code to refactor and help each other.</p>
+    <a href="#modal-one" class="button">Post a refactor</a>
+  </section>
+  <main class="flex-main">
+    <article>
+      <section class="flex-filter">
+        <h4>Latest Refactors</h4>
+        <!-- This form will filter posts by language -->
+        <div class="filter">
+          <select name="State" id="input7">
+            <option value="Choice" class="choice">Choose a language</option>
+            <option value="C#">C#</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="JS">JS</option>
+            <option value="PYTHON">PYTHON</option>
+            <option value="RUBY">RUBY</option>
+          </select>
+        </div>
+      </section>
+      <div class="flex-postcontainer">
+        <section class="refactorpost flex row">
+          <div class="vote flex column center">
+            <a href="#">
+              <svg class="voteup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+              <polygon points="0,13.5 13.1,0 26.3,13.5"/>
+              </svg>
 
-					def perimeter
-					2 * (@width + @height)
-					end
-					end
+            </a>
+            <span class="votecounter">vote count</span>
+            <a href="#" class="votedown"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+            <polygon points="26.3,0 13.1,13.5 0,0"/>
+            </svg>
+            </a>
+          </div>
+          <div class="flex-posttitle">
+            <a href="#"><h3>User generated refactor name</h3></a>
+            <h4 class="username">Description pulled from user comment</h4>
+            <a href="#" class="language-tag">Javascript</a>
+          </div>
+        </section>
+        <section class="refactorpost flex row">
+          <div class="vote flex column center">
+            <a href="#">
+              <svg class="voteup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+              <polygon points="0,13.5 13.1,0 26.3,13.5"/>
+              </svg>
 
-					r = Rectangle.new(23.45, 34.67)
-					puts "Area is = #{r.area}"
-					puts "Perimeter is = #{r.perimeter}"
-					view raw
+            </a>
+            <span class="votecounter">vote count</span>
+            <a href="#" class="votedown"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+            <polygon points="26.3,0 13.1,13.5 0,0"/>
+            </svg>
+            </a>
+          </div>
+          <div class="flex-posttitle">
+            <a href="#"><h3>User generated refactor name</h3></a>
+            <h4 class="username">Description pulled from user comment</h4>
+            <a href="#" class="language-tag">Javascript</a>
+          </div>
+        </section>
+        <section class="refactorpost flex row">
+          <div class="vote flex column center">
+            <a href="#">
+              <svg class="voteup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+              <polygon points="0,13.5 13.1,0 26.3,13.5"/>
+              </svg>
+
+            </a>
+            <span class="votecounter">vote count</span>
+            <a href="#" class="votedown"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+            <polygon points="26.3,0 13.1,13.5 0,0"/>
+            </svg>
+            </a>
+          </div>
+          <div class="flex-posttitle">
+            <a href="#"><h3>User generated refactor name</h3></a>
+            <h4 class="username">Description pulled from user comment</h4>
+            <a href="#" class="language-tag">Javascript</a>
+          </div>
+        </section>
+        <section class="refactorpost flex row">
+          <div class="vote flex column center">
+            <a href="#">
+              <svg class="voteup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+              <polygon points="0,13.5 13.1,0 26.3,13.5"/>
+              </svg>
+
+            </a>
+            <span class="votecounter">vote count</span>
+            <a href="#" class="votedown"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+            <polygon points="26.3,0 13.1,13.5 0,0"/>
+            </svg>
+            </a>
+          </div>
+          <div class="flex-posttitle">
+            <a href="#"><h3>User generated refactor name</h3></a>
+            <h4 class="username">Description pulled from user comment</h4>
+            <a href="#" class="language-tag">Javascript</a>
+          </div>
+        </section>
+        <section class="refactorpost flex row">
+          <div class="vote flex column center">
+            <a href="#">
+              <svg class="voteup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+              <polygon points="0,13.5 13.1,0 26.3,13.5"/>
+              </svg>
+
+            </a>
+            <span class="votecounter">vote count</span>
+            <a href="#" class="votedown"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+            <polygon points="26.3,0 13.1,13.5 0,0"/>
+            </svg>
+            </a>
+          </div>
+          <div class="flex-posttitle">
+            <a href="#"><h3>User generated refactor name</h3></a>
+            <h4 class="username">Description pulled from user comment</h4>
+            <a href="#" class="language-tag">Javascript</a>
+          </div>
+        </section>
+        <section class="refactorpost flex row">
+          <div class="vote flex column center">
+            <a href="#">
+              <svg class="voteup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+              <polygon points="0,13.5 13.1,0 26.3,13.5"/>
+              </svg>
+
+            </a>
+            <span class="votecounter">vote count</span>
+            <a href="#" class="votedown"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 26.279 13.502" enable-background="new 0 0 26.279 13.502" xml:space="preserve">
+            <polygon points="26.3,0 13.1,13.5 0,0"/>
+            </svg>
+            </a>
+          </div>
+          <div class="flex-posttitle">
+            <a href="#"><h3>User generated refactor name</h3></a>
+            <h4 class="username">Description pulled from user comment</h4>
+            <a href="#" class="language-tag">Javascript</a>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <!-- Modal starts here -->
+  <div class="modal" id="modal-one" aria-hidden="true">
+    <div class="modal-dialog flex row">
+      <div class="modal-login flex column">
+        <div class="modal-login">
+          <form class="flex column">
+            <input type="name" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+          </form>
+          <a href="#" class="button">login</a>
+        </div>
+      </div>
+      <div class="modal-register">
+        <a href="#" class="btn-close" aria-hidden="true">x</a>
+        <div class="flex column center">
+          <a href="">
+            <svg class="gitreg_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 325 92" enable-background="new 0 0 325 92" xml:space="preserve">
+              <path fill="#51B5AF" d="M325 84.8c0 3.976-3.224 7.2-7.2 7.2H7.2C3.224 92 0 88.8 0 84.8V7.2C0 3.2 3.2 0 7.2 0h310.6 c3.976 0 7.2 3.2 7.2 7.2V84.8z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M51.323 21.613c-13.807 0-25.003 11.195-25.003 25 c0 11 7.2 20.4 17.1 23.725c1.25 0.2 1.707-0.543 1.707-1.205c0-0.594-0.022-2.166-0.034-4.253 c-6.955 1.511-8.423-3.352-8.423-3.352c-1.137-2.889-2.776-3.658-2.776-3.658c-2.27-1.551 0.172-1.52 0.172-1.52 c2.509 0.2 3.8 2.6 3.8 2.577c2.231 3.8 5.9 2.7 7.3 2.078c0.227-1.616 0.873-2.718 1.588-3.343 c-5.552-0.631-11.39-2.776-11.39-12.358c0-2.73 0.974-4.962 2.574-6.71c-0.257-0.633-1.115-3.175 0.245-6.617 c0 0 2.099-0.672 6.9 2.563c1.994-0.555 4.133-0.832 6.26-0.842c2.123 0 4.3 0.3 6.3 0.8 c4.774-3.236 6.869-2.563 6.869-2.563c1.364 3.4 0.5 6 0.2 6.617c1.603 1.7 2.6 4 2.6 6.7 c0 9.606-5.846 11.72-11.417 12.339c0.898 0.8 1.7 2.3 1.7 4.631c0 3.343-0.031 6.04-0.031 6.9 c0 0.7 0.5 1.4 1.7 1.202c9.927-3.313 17.085-12.679 17.085-23.722C76.329 32.8 65.1 21.6 51.3 21.613z"/>
+              <rect x="86.5" y="40.1" fill="none" width="208.1" height="15.9"/>
+              <text transform="matrix(1 0 0 1 88.1648 53.7366)" fill="#FFFFFF" font-family="'OpenSans-Semibold'" font-size="18">REGISTER WITH GITHUB</text>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  <!-- Modal ends here -->
+</div>
+  <div class="minheight"></div>
+  <footer>
+    <p> Copyright Refactors 2014</p>
+  </footer>
+</body>
+</html>
 					```
 
 					        that is some ugly a** code...
@@ -125,17 +322,41 @@
 					<h2>Our Approach</h2>
 					<ol>
 							<li><a href="https://dl.dropboxusercontent.com/u/6731793/Refactor_audience.JPG" target="_blank">Narrowed our target audience</a></li>
-							<li><a href="https://dl.dropboxusercontent.com/u/6731793/Refactor_user_flow.JPG" target="_blank">Discuss user-flow</a></li>
+							<li><a href="https://dl.dropboxusercontent.com/u/6731793/Refactor_user_flow.JPG" target="_blank">Discuss Initial User-flow</a></li>
+							<li>Moodboard</li>
+							<li>Style Tile</li>
 							<li><a href="http://invis.io/5ZVAZM8H" target="_blank">Wireframe</a></li>
-							<li>Test</li>
-							<li>Build features</li>
 							<li>Design</li>
-							<li>Integrate design</li>
+							<li>Test</li>
+							<li>Integrate design with Ruby kids</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Working With Dem Ruby Kids</h2>
+					<ol>
+						<li>assess as a team during scrums what we needed to accomplish</li>
+						<li>work on discussed view</li>
+						<li>push</li>
+						<li>ruby devs see what they broke / what broke their tests</li>
+						<li>we help inspect and fix</li>
 					</ol>
 				</section>
 
 				<section data-transition="linear">
 					<button><a class="button" href="http://refactors.herokuapp.com/" target="_blank">View Demo</a></button>
+				</section>
+
+				<section>
+					<h2>Challenges</h2>
+					<h4>Or sorry daddy Dale, we dun bad...</h4>
+					<ul>
+						<li>Finding a better integrated work rhythm</li>
+						<li>Set naming conventions with the ruby team</li>
+						<li>Rails will re-class and double class, so watch out</li>
+						<li>That darn footer...</li>
+						<li>Make sure to set appropriate time to refactor and clean things up</li>
+					</ul>
 				</section>
 
 <!-- Don't do anything past here -->
