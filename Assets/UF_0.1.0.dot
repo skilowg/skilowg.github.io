@@ -1,0 +1,64 @@
+digraph summary{
+  A [label="User", shape=oval]
+  B [label="Need help refactoring code", shape=oval]
+  C [label="Wants to help other's refactor code", shape=oval]
+  D [label="Access homepage app on desktop", shape=box]
+  E [label="Access homepage app on mobile", shape=box]
+  F [label="*/Login", shape=box]
+  G [label="*/Sign up", shape=box]
+  G2 [label="Link Github Account", shape=box]
+  G3 [label="Authorize app for Github", shape=box]
+  H [label="*Explore popular posts / homepage", shape=box]
+  I [label="Create a new post", shape=box]
+  I2 [label="Create a new post view", shape=box]
+  I3 [label="Input code to be refactored", shape=box]
+  I4 [label="Input question/comment", shape=box]
+  I5 [label="Tag used language", shape=box]
+  J [label="Refactor a post", shape=box]
+  J2 [label="Refactor post view", shape=box]
+  J3 [label="Input refactored code", shape=box]
+  J4 [label="Input refactored code comment", shape=box]
+  K [label="Submit code and comment", shape=box]
+  L [label="*/User profile", shape=box]
+  M [label="*Help view", shape=box]
+  N [label="Edit submitted code", shape=box]
+  O [label="*Search for a post", shape=box]
+  P [label="Filter posts by language", shape=box]
+  Q [label="Refactor notification email sent/received", shape=oval]
+
+
+  A->B
+  A->C
+  B->D
+  B->E
+  C->D
+  C->E
+  D->H
+  E->H
+  H->I
+  H->J
+  I,J->F
+  I,J->G
+  G->G2
+  G2->G3
+  G3,F->I2,J2
+  I2->I5
+  I5->I3
+  I3->I4
+  I4->K
+  J2->J3 [label=" user preferred refactor method"]
+  J3->J4
+  J4->K
+  H->F
+  F->L
+  L->H [dir="both"]
+  H->M [dir="both"]
+  L->I2
+  K->N [label=" formatting issue"]
+  N->M [label=" opens in new tab"]
+  H->O
+  H->P
+  O,P->J
+  K->Q
+
+}
